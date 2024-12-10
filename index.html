@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Price Rate Document for UI/UX Engineering Services</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 1.5s ease-out;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #2b2b2b;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #777;
+            font-weight: 300;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-out;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        /* Hover effect for rows */
+        tr:hover {
+            background-color: #ecf0f1;
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-section {
+            margin-bottom: 50px;
+        }
+        .service-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: slideInFromLeft 1s ease-out;
+        }
+        .service-section p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Cost Styling */
+        .cost {
+            font-weight: bold;
+            color: #2ecc71;
+            font-size: 1.2rem;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #2b2b2b;
+            color: white;
+            margin-top: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-details {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        .contact-details a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .service-section h2 {
+                font-size: 1.8rem;
+            }
+            .service-section p {
+                font-size: 0.9rem;
+            }
+            footer {
+                font-size: 0.9rem;
+            }
+            table, th, td {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Mobile-First Responsive */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            .service-section h2 {
+                font-size: 1.6rem;
+            }
+            .cost {
+                font-size: 1.1rem;
+            }
+            footer {
+                font-size: 0.8rem;
+            }
+            table {
+                font-size: 0.8rem;
+                width: 100%;
+            }
+            .contact-details {
+                font-size: 0.9rem;
+            }
+
+            /* Making the table scrollable horizontally on mobile devices */
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table {
+                width: 800px;
+            }
+        }
+
+        /* For Small Devices (Mobile-first) */
+        @media (max-width: 360px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            header p {
+                font-size: 0.8rem;
+            }
+            .service-section h2 {
+                font-size: 1.4rem;
+            }
+            table, th, td {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+            .cost {
+                font-size: 0.9rem;
+            }
+            .contact-details {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Price Rate Document for UI/UX Engineering Services</h1>
+    <p>Service Offerings (Sri Lanka Rates)</p>
+</header>
+
+<!-- Service Offerings Table -->
+<div class="service-section">
+    <h2>Service Offerings</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Details</th>
+                <th>Technology Used</th>
+                <th>Estimated Time</th>
+                <th>Cost per Page (LKR)</th>
+            </tr>
+            <tr>
+                <td>Basic Landing Page Design</td>
+                <td>- Simple and clean layout <br>- Up to 5 sections <br>- Basic animations <br>- Responsive design</td>
+                <td>WordPress</td>
+                <td>2-3 days</td>
+                <td class="cost">LKR 25,000 - 45,000</td>
+            </tr>
+            <tr>
+                <td>Standard Landing Page Design</td>
+                <td>- Medium-complexity layout <br>- Up to 7 sections <br>- Interactive elements <br>- SEO-optimized</td>
+                <td>WordPress</td>
+                <td>3-5 days</td>
+                <td class="cost">LKR 45,000 - 70,000</td>
+            </tr>
+            <tr>
+                <td>Premium Landing Page Design</td>
+                <td>- Complex layout <br>- 7+ sections <br>- Advanced interactivity <br>- Custom illustrations</td>
+                <td>WordPress</td>
+                <td>5-7 days</td>
+                <td class="cost">LKR 70,000 - 110,000</td>
+            </tr>
+            <tr>
+                <td>E-Commerce Landing Page Design</td>
+                <td>- Product showcase <br>- Payment gateway integration <br>- User journey-focused</td>
+                <td>WordPress</td>
+                <td>7-10 days</td>
+                <td class="cost">LKR 100,000 - 160,000</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Web Development Rates Table -->
+<div class="service-section">
+    <h2>Web Development Rates</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Details</th>
+                <th>Cost (LKR)</th>
+            </tr>
+            <tr>
+                <td>Basic Web Development</td>
+                <td>- Simple HTML/CSS site <br>- Up to 5 pages <br>- Basic interactivity</td>
+                <td class="cost">LKR 40,000 - 60,000</td>
+            </tr>
+            <tr>
+                <td>Standard Web Development</td>
+                <td>- HTML, CSS, JavaScript <br>- Up to 10 pages <br>- Dynamic content integration</td>
+                <td class="cost">LKR 70,000 - 100,000</td>
+            </tr>
+            <tr>
+                <td>Advanced Web Development</td>
+                <td>- Full-stack development <br>- Custom CMS <br>- E-commerce integration</td>
+                <td class="cost">LKR 120,000 - 200,000</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Figma Rates Table -->
+<div class="service-section">
+    <h2>Figma Rates</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Details</th>
+                <th>Cost (LKR)</th>
+            </tr>
+            <tr>
+                <td>Figma Wireframe</td>
+                <td>- Basic layout with elements <br>- Interactive flow</td>
+                <td class="cost">LKR 15,000 - 25,000</td>
+            </tr>
+            <tr>
+                <td>Figma Prototyping</td>
+                <td>- Interactive prototype <br>- User flow and transitions</td>
+                <td class="cost">LKR 30,000 - 50,000</td>
+            </tr>
+            <tr>
+                <td>Figma Full Design</td>
+                <td>- Complete UI Design <br>- Interactive prototype</td>
+                <td class="cost">LKR 50,000 - 80,000</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Addons Table -->
+<div class="service-section">
+    <h2>Addon Services</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Addon Service</th>
+                <th>Details</th>
+                <th>Cost (LKR)</th>
+            </tr>
+            <tr>
+                <td>Extra Page</td>
+                <td>- Additional page creation <br>- Responsive design</td>
+                <td class="cost">LKR 5,000 - 8,000</td>
+            </tr>
+            <tr>
+                <td>SEO Optimization</td>
+                <td>- On-page SEO <br>- Keyword optimization <br>- Content structuring</td>
+                <td class="cost">LKR 20,000 - 30,000</td>
+            </tr>
+            <tr>
+                <td>Performance Optimization</td>
+                <td>- Speed and load time improvements <br>- Image optimization</td>
+                <td class="cost">LKR 15,000 - 25,000</td>
+            </tr>
+            <tr>
+                <td>CMS Integration</td>
+                <td>- WordPress, Joomla, etc. <br>- Content management system setup</td>
+                <td class="cost">LKR 40,000 - 60,000</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <p>For more details or inquiries, contact us at <a href="mailto:sannasuriyapm.com">sannasuriyapm.com</a> or call +94 77 621 77 29.</p>
+</footer>
+
+</body>
+</html>
